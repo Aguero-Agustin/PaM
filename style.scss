@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+.title{
+    font-size: 6vh;
+}
+.parrafo{
+    font-size: 4vh;
+}
+.navbar{
+    background-color: #D69D58;
+}
+.jumbotron{
+    display: flex;
+    height: 90vh;
+    background-image: url(./img/boda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2{
+        @extend .title;
+        color: white;
+        padding: 3vh;
+        text-align: center;
+        text-shadow: -5px 6px 10px rgba(255,255,255,0.74);
+    }
+
+    p{
+        @extend .parrafo;
+        color: white;
+        padding: 5vh;
+        text-shadow: -5px 6px 10px rgba(255,255,255,0.74);
+    }
+}
