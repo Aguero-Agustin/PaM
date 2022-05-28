@@ -1,20 +1,24 @@
 * {
   padding: 0px;
   margin: 0px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.title, .jumbotron h2 {
+.title, .jumbotron h2, .nosotros .nosotros--titulo h3, .nosotros .nosotros--info h3 {
   font-size: 6vh;
 }
 
-.parrafo, .jumbotron p {
+.parrafo, .jumbotron p, .nosotros .nosotros--titulo p, .nosotros .nosotros--info p {
   font-size: 4vh;
 }
 
 .navbar {
   background-color: #D69D58;
+}
+
+.navbar a {
+  color: black;
 }
 
 .jumbotron {
@@ -38,5 +42,25 @@
   color: white;
   padding: 5vh;
   text-shadow: -5px 6px 10px rgba(255, 255, 255, 0.74);
+}
+
+.nosotros .nosotros--titulo {
+  text-align: center;
+  background-color: #D69D58;
+  padding: 1vh;
+}
+
+.nosotros .nosotros--info h3 {
+  text-align: center;
+}
+
+.nosotros .nosotros--info p {
+  text-align: center;
+}
+
+.nosotros .nosotros--info .info--img {
+  height: 50vh;
+  background-image: url(./img/boda.jpg);
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

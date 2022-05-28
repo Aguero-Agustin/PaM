@@ -1,36 +1,77 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
-.title{
+
+.title {
     font-size: 6vh;
 }
-.parrafo{
+
+.parrafo {
     font-size: 4vh;
 }
-.navbar{
+
+.navbar {
     background-color: #D69D58;
+
+    a {
+        color: black;
+    }
 }
-.jumbotron{
+
+.jumbotron {
     display: flex;
     height: 90vh;
     background-image: url(./img/boda.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
-    h2{
+    h2 {
         @extend .title;
         color: white;
         padding: 3vh;
         text-align: center;
-        text-shadow: -5px 6px 10px rgba(255,255,255,0.74);
+        text-shadow: -5px 6px 10px rgba(255, 255, 255, 0.74);
     }
 
-    p{
+    p {
         @extend .parrafo;
         color: white;
         padding: 5vh;
-        text-shadow: -5px 6px 10px rgba(255,255,255,0.74);
+        text-shadow: -5px 6px 10px rgba(255, 255, 255, 0.74);
+    }
+}
+
+.nosotros {
+    .nosotros--titulo {
+        text-align: center;
+        background-color: #D69D58;
+        padding: 1vh;
+
+        h3 {
+            @extend .title;
+        }
+
+        p {
+            @extend .parrafo;
+        }
+    }
+
+    .nosotros--info {
+        h3 {
+            @extend .title;
+            text-align: center
+        }
+
+        p {
+            @extend .parrafo;
+            text-align: center
+        }
+        .info--img{
+            height: 50vh;
+            background-image: url(./img/boda.jpg);
+            background-size: cover;
+        }
     }
 }
