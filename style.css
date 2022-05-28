@@ -6,6 +6,10 @@
   font-family: 'Tiro Kannada', serif;
 }
 
+body {
+  background-color: #FFBB69;
+}
+
 .title, .jumbotron h2, .nosotros .nosotros--titulo h3, .nosotros .nosotros--info h3 {
   font-size: 8vh;
 }
@@ -72,6 +76,8 @@
   padding: 5vh;
   background-image: url(./img/fotografo.jpg);
   background-size: cover;
+  margin-bottom: 3vh;
+  border-radius: 50px;
 }
 
 .footer .footer--list {
@@ -94,5 +100,18 @@
 .footer a {
   color: black;
   text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 755px) {
+  .title, .jumbotron h2, .nosotros .nosotros--titulo h3, .nosotros .nosotros--info h3 {
+    font-size: 6vh;
+  }
+  .parrafo, .navbar a, .jumbotron p, .nosotros .nosotros--titulo p, .nosotros .nosotros--info p, .footer a {
+    font-size: 3vh;
+  }
+  .info--parrafo__linea p {
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+  }
 }
 /*# sourceMappingURL=style.css.map */
