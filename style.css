@@ -3,13 +3,14 @@
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Tiro Kannada', serif;
 }
 
 .title, .jumbotron h2, .nosotros .nosotros--titulo h3, .nosotros .nosotros--info h3 {
-  font-size: 6vh;
+  font-size: 8vh;
 }
 
-.parrafo, .jumbotron p, .nosotros .nosotros--titulo p, .nosotros .nosotros--info p {
+.parrafo, .navbar a, .jumbotron p, .nosotros .nosotros--titulo p, .nosotros .nosotros--info p {
   font-size: 4vh;
 }
 
@@ -58,9 +59,18 @@
   text-align: center;
 }
 
+.nosotros .nosotros--info .info--iframe {
+  padding-top: 3vh;
+}
+
+.nosotros .nosotros--info .info--parrafo {
+  padding: 5vh;
+}
+
 .nosotros .nosotros--info .info--img {
-  height: 50vh;
-  background-image: url(./img/boda.jpg);
+  height: 54vh;
+  padding: 5vh;
+  background-image: url(./img/fotografo.jpg);
   background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,10 +2,11 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Tiro Kannada', serif;
 }
 
 .title {
-    font-size: 6vh;
+    font-size: 8vh;
 }
 
 .parrafo {
@@ -16,6 +17,7 @@
     background-color: #D69D58;
 
     a {
+        @extend .parrafo;
         color: black;
     }
 }
@@ -68,9 +70,16 @@
             @extend .parrafo;
             text-align: center
         }
+        .info--iframe{
+            padding-top: 3vh;
+        }
+        .info--parrafo{
+            padding: 5vh;
+        }
         .info--img{
-            height: 50vh;
-            background-image: url(./img/boda.jpg);
+            height: 54vh;
+            padding: 5vh;
+            background-image: url(./img/fotografo.jpg);
             background-size: cover;
         }
     }
