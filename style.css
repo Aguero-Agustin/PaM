@@ -80,6 +80,10 @@ body {
   border-radius: 50px;
 }
 
+.galeria .galeria--img {
+  padding: 10px;
+}
+
 .footer .footer--list {
   background-color: #D69D58;
   display: -webkit-box;
