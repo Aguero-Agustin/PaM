@@ -6,8 +6,17 @@
   font-family: 'Tiro Kannada', serif;
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
+
 body {
   background-color: #FFBB69;
+}
+
+.body--contacto {
+  background-image: url(./img/fotografo-paisajes.jpg);
+  background-size: cover;
 }
 
 .title, .jumbotron h2, .nosotros .nosotros--titulo h3, .nosotros .nosotros--info h3 {
@@ -24,6 +33,10 @@ body {
 
 .navbar a {
   color: black;
+}
+
+.navbar--contacto {
+  margin-bottom: 5vh;
 }
 
 .jumbotron {
@@ -80,8 +93,60 @@ body {
   border-radius: 50px;
 }
 
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2vh;
+  margin: 1vh;
+}
+
+.card {
+  background-color: #e9c79e;
+}
+
 .galeria .galeria--img {
   padding: 10px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3vh;
+}
+
+.body-form__item, .textarea {
+  width: 50vh;
+}
+
+.textarea {
+  resize: none;
+  margin-top: 2vh;
+}
+
+.body-contacto {
+  margin-top: 2vh;
+  background-color: #D69D58;
+  padding: 2vh;
+}
+
+.body-contacto ul {
+  list-style: none;
+}
+
+.body-contacto .body__item {
+  text-align: center;
 }
 
 .footer .footer--list {
@@ -106,6 +171,18 @@ body {
   text-decoration: none;
 }
 
+.footer .footer-tarifas {
+  margin-top: 2vh;
+}
+
+.footer-tarifas {
+  margin-top: 2vh;
+}
+
+.footer--contacto {
+  margin-top: 2vh;
+}
+
 @media screen and (min-width: 320px) and (max-width: 755px) {
   .title, .jumbotron h2, .nosotros .nosotros--titulo h3, .nosotros .nosotros--info h3 {
     font-size: 6vh;
@@ -116,6 +193,18 @@ body {
   .info--parrafo__linea p {
     padding-bottom: 50px;
     border-bottom: 1px solid black;
+  }
+  .jumbotron {
+    background-position-x: center;
+  }
+  .info--img {
+    background: top;
+  }
+}
+
+@media screen and (min-width: 755px) {
+  .itemcontact {
+    border-right: solid black 1px;
   }
 }
 /*# sourceMappingURL=style.css.map */
